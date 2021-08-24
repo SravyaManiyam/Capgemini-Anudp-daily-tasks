@@ -1,0 +1,4 @@
+class CLA
+{
+public ststic void main(String []args)
+{

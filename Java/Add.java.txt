@@ -1,0 +1,14 @@
+import java.util.*;
+class Add
+{
+public static void mian(String args[])
+{
+Scanner sc= new Scanner(System.in);
+System.out.println("Enter a value:"int a= nextInt());
+System.out.println("Enter b value:"int b= nextInt());
+int sum=a+b;
+System.out.println("Sum:"=sum);
+}
+}
+
+
