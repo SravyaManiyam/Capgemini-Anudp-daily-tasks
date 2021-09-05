@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a:link{
+          color:blue;  
+        }
+        a:visited{
+            color:purple;
+        }
+        a:hover{
+            font-size: 30px;
+        }
+        a:active{
+            font-size: 20px;
+            background-color: aqua;
+            color:white;
+        }
+        a{
+            text-decoration:none;
+            padding:15px;
+        }
+        h1{
+            color:blue;
+        }
+        h1::after{
+            content:"--by Sravya";
+            color:red;
+        }
+        h2::before{
+            content: url(smile.jpeg);
+        }
+        table:hover{
+            outline: 3px outset yellow;
+            color:red;
+        
+        }
+        .myimg:hover{
+            width:500px;
+            height: 500px;
+            border: 2px solid red;  
+        }
+        h1:hover{
+            background-color: lightpink;
+            color:blue;
+        }
+        p::first-letter{
+            color:red;
+            font-size: 40px;
+        }
+        div::first-line{
+            color:red;
+            font-size: 30px;
+        }
+        span::selection{
+            background-color: red;
+            color:white;
+        }
+        <!----tr:nth-child(odd){
+            background-color: grey;---->
+        }
+        tr:nth-child(even){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body> 
+   <h1>Welcome to pseudo-classes</h6>   
+<a href="#">Home<i class="fas fa-house-user"></i></a>
+<a href="AboutUs.html">About Us<i class="fa fa-american-sign-language-interpreting" style="font-size:24px"></i></a>
+<a href="P&S.html">Product &Services<i class="fa fa-wrench" aria-hidden="true"></i></a>
+<a href="JoinUs.html">JoinUs<i class="fas fa-handshake"></i></a>
+<a href="Contact.html">Contact<i class="fas fa-address-book"></i></a>
+<br>
+ <br>
+  <img class="myimg" src="amazon.webp" width="200" height="200" title="image is ready">
+   
+   <h2>Code is ready for pseudo classes</h2>
+    <span>
+        To succeed in an environment of growth and excellence and earn a job which provides me job satisfaction and self development and help me to achieve organizational goal.
+    </span>
+    
+    <p> MBA from Gurunanak Institutions of technology
+    Btech(ECE)from BhojReddy Enginnering college for women
+    Intermediate MPC from Srichaitanya Jr College
+    SSC from Narayana Concept School</p>
+    
+    <div>2.Coronavirus live updates: Foreign nationals now eligible for Covid-19 vaccination in India.India has reported 35,499 new cases and 447 deaths in the last 24 hours, as per a government health bulletin. Active caseload in the country currently stands at 4,02,188. A recovery rate of 97.40% was recorded.</div>
+    <br> <br>
+    
+    <table border="3px">
+    <tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Qualification</th>
+    <th>Contact Number</th>
+    <th>Email id</th>
+    </tr>
+
+    <tr>
+    <td>1.</td> <td>Sravya.M</td> <td>MBA</td> <td>8790635759</td> <td>sravya.maniyam@gmail.com</td>
+    </tr>
+
+    <tr>
+    <td>2.</td> <td>Alekhya</td> <td>Btech</td> <td>986734232</td> <td>gopireddy.alekhyareddy@gmail.com</td>
+    </tr>
+
+    <tr>
+    <td>3.</td> <td>Hanirudh</td> <td>MCA</td> <td>924635129</td> <td>suman.sumanasri@gmail.com</td>
+    </tr>
+</body>
+</html>    
