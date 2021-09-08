@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+       nav{
+           background-image: linear-gradient(to top right,purple,violet,lavender);
+           height: 45px;
+           padding: 10px;
+           margin-left: -10px;
+           margin-top: -10px;
+       }
+       a{
+           text-decoration: none;
+           font-size: 20px;
+           color:white;
+
+       }
+       a:hover{
+           color: purple;
+       }
+       .a{
+           display: inline;
+           padding: 12px;
+           margin-left: 50px;
+
+       }
+        .dropitem1,.dropitem2,.dropitem3,.dropitem4,.dropitem5,.dropitem6{
+           display: block;
+       }
+       .drop1:hover .a-content{
+           display: block;
+       }
+       .a-content{
+            display: none;
+           background-image: linear-gradient(to top right,purple,violet,lavender);
+           margin-left: 175px;
+            padding: 12px;
+           position: absolute;
+           width:75px;
+           z-index: 2;
+       }
+       .drop2:hover .ad-content{
+           display: block;
+           
+       }
+       .ad-content{
+            display: none;
+          background-image: linear-gradient(to top right,purple,violet,lavender);
+           margin-left:340px;  
+           width:90px;
+           padding: 12px;
+           position: absolute;
+           z-index: 2;
+       }
+       .drop3:hover .ac-list{
+           display: block;
+       }
+       .ac-list{
+            display: none;
+          background-image: linear-gradient(to top right,purple,violet,lavender);
+            margin-left:460px; 
+           padding: 12px;
+           position: absolute;
+           z-index: 2;
+       }
+       .drop4:hover .d-list{
+           display: block;
+       }
+       .d-list{
+            display: none;
+          background-image: linear-gradient(to top right,purple,violet,lavender);
+           margin-left:690px;
+           width: 50px;
+           padding: 12px;
+           position: absolute;
+           z-index: 2;
+       }            
+       .drop5:hover .p-list{
+           display: block;
+       }
+       .p-list{
+            display: none;
+          background-image: linear-gradient(to top right,purple,violet,lavender);
+           margin-left: 820px;
+           padding: 12px;
+           position: absolute;
+           z-index: 2;
+       }
+       .drop6:hover .f-list{
+           display: block;
+       }
+       .f-list{
+            display: none;
+          background-image: linear-gradient(to top right,purple,violet,lavender);
+            margin-left:1000px;
+           padding: 12px;
+           position: absolute;
+           z-index: 2;
+       }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+          <li class="a"><a href="">Home</a></li>
+          <li class="a drop1"><a href="">About Us</a>
+          <ol class="a-content">
+              <li class="dropitem1"><a href="'">Founders</a></li>
+              <li class="dropitem1"><a href="'">Vission</a></li>
+              <li class="dropitem1"><a href="'">Mission</a></li>
+              <li class="dropitem1"><a href="'">Policies</a></li>
+              <li class="dropitem1"><a href="'">About Us</a></li> 
+          </ol>
+          </li>
+          
+          <li class="a drop2"><a href="">Admmisions</a>
+          <ol class="ad-content">
+              <li class="dropitem2"><a href="">Information Brochure</a></li>
+              <li class="dropitem2"><a href="">Fee structure</a></li>
+              <li class="dropitem2"><a href="">Intake seats</a></li>
+              <li class="dropitem2"><a href="">cateory-A</a></li>
+              <li class="dropitem2"><a href="">cateory-B</a></li>
+          </ol>
+          </li>
+          
+          <li class="a drop3"><a href="">Academics</a>
+          <ol class="ac-list">
+              <li class="dropitem3"><a href="">Academic counsil</a></li>
+              <li class="dropitem3"><a href="">Academic Calender</a></li>
+              <li class="dropitem3"><a href="">News Desk</a></li>
+          </ol>
+          </li>
+           
+            <li class="a drop4"><a href="">Departments</a>
+              <ol class="d-list">
+              <li class="dropitem4"><a href="">CSE</li>
+              <li class="dropitem4"><a href="">IT</li>
+              <li class="dropitem4"><a href="">EEE</li>
+              <li class="dropitem4"><a href="">ECE</li>
+              </ol>
+            </li>
+            
+           <li class="a drop5"><a href="">Placements</a>
+           <ol class="p-list">
+               <li class="dropitem5"><a href="">Anouncements</li>
+               <li class="dropitem5"><a href="">Company visited</li>
+               <li class="dropitem5"><a href="">Company Placed</li>
+               <li class="dropitem5"><a href="">On/off campus drive</li>
+           </ol>
+           </li>
+           
+            <li class="a drop6"><a href="">Facilities</a>
+            <ol class="f-list">
+                <li class="dropitem6"><a href="">Library</li>
+                <li class="dropitem6"><a href="">Sports</li>
+                <li class="dropitem6"><a href="">College radio</li>
+                <li class="dropitem6"><a href="">Other Facilities</li>
+            </ol>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
