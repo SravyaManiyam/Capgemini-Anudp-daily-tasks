@@ -1,127 +1,222 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
    <style>
-       nav{
-           margin-top: 20px;
+       *{
+           color:#636666;
+       }
+      .block-menu nav{
+           position: relative;
+          top:-30px;
+       }
+       .block-menu nav p{
+           margin-left: -20px;
        }
        li{
            display:block;
-           padding: 10px;
+           padding:10px;
+    margin-left: -30px;
            
        }
        a{
            text-decoration: none;
-           padding:10px;
+           padding:0px;
+           margin:0px; 
        }
        .a-nav:hover{
            background-color: dimgrey;
        }
-       .home{
+        .home{
            background-color: darkgray;
            width: 100px;
            height: 20px;
            text-align: center;
+           position: relative;
+           left:30px;
+             color:black;
+            font-weight: bold;
        }
        .search{
+            border:1px solid #D8DBDB;
            width: 500px;
-           height:20px;
+           height:24px;
            outline: none;
            border 1px,ridge,lightblue;
            position: relative;
            left:290px;
-           top:-23px;    
+           top:-70px;    
        }
        .main{
-           margin-left: 220px;
-           margin-top: -523px;
+           margin-left: 200px;
+           margin-top: -560px;
            height:40px;
            background-color: white;
+           
        }
-       button{
+       .main hr{
+           color:#BDC6C6;
+       }
+       .main button{
            outline:none;
            border:none;
            border-radius: 15px;
-           width:100px;
+           width:auto;
+           padding:14px;
+           line-height: 2px;
+           text-align: center;
            height: 30px;
        }
        .maincontent{
-           border:1px outset grey;
+           border:1px outset #BDC6C6;
            outline: none;
            background-color:antiquewhite;
            height:1700px;
            margin-left: 200px;   
-           margin-top: 10px;
-
+           margin-top: 10px;   
            
        }
        .logo{
+           position:relative;
+           top:-10px;
+       }
+       
+       .home{
+           margin-top: -20px;
+           margin-left: -70px;
+       }
+       .fa-size{
+           font-size: 25px;
+           padding:15px;
            position: relative;
-           top:25px;
+           top:-30px;
        }
-       .v1{
+      .v1{
            position: absolute;
-           top:28px;
-           left:1020px;
+           top:20px;
+           left:1100px;
        }
-       .v1:hover{   
-           content: "Create";  
-       }
+   
        .v2{
           position: absolute;
-           top:27px;
-           left:1100px;
+           top:20px;
+           left:1170px;
        }
        .v3{
            position: absolute;
-           top:26px;
-           left:1175px;
+           top:20px;
+           left:1230px;
        }
        .v4{
            position: absolute;
-           top:27px;
-           left:1240px;
+           top:20px;
+           left:1290px;
        }
-       .home{
-           margin-left:-50px;
-           margin-top: -20px;
+       .v1-cont,.v2-cont,.v3-cont{
+        display: none;
        }
+       .v1:hover .v1-cont{
+           display: block;
+       }
+       .v2:hover .v2-cont{
+          display: block; 
+       }
+       .v3:hover .v3-cont{
+           display: block;
+       }
+       #button{
+        width:auto;
+        background-color: #808282;
+           color:white;
+           border-radius: 0px;
            
+       }
+       #but{
+           border-radius: 0px;
+           width:78px;
+            height:28px;
+           position:absolute;
+           left:802px;
+           top:21px;
+           border:1px solid #D8DBDB;
+       }
+       .mic{
+           width:34px;
+           height:34px;
+           border-radius: 20px;
+           position: relative;
+           left:390px;
+           top:-70px;
+           outline: none;
+           border:none;
+           
+       }
+       .img-space{
+           padding-right: 20px;
+           width:15px;
+           height:15px;
+       }
+      
+        
+       }
+       
     </style>
     
 </head>
 <body>
- <img class="logo" src="youtube%20logo.png" width="200" heidht="70">
-  <div>
-      <input class="search" type="text" placeholder="Search">
-      <a href="" class="v1"><img src="v1.png" width="35" height="35"></a>
-      <a href-"" class="v2"><img src="v2.png" width="30" height="30"></a>
-      <a href="" class="v3"><img src="notif.svg" width="25" height="25"></a>
-        <a href="" class="v4"><img src="user.svg" width="25" height="25"></a>
+   <div class="head">
+    <i class="fas fa-bars fa-size"></i>
+     <img class="logo";
+      src="youtube%20logo.png" width="110" heidht="60">
+      <div>
+          <input class="search" type="text" placeholder="Search">
+          <button id="but"><img src="Images/search%20icon.png" width="15" height="15"</button>
+          <button class="mic"><i class="fas fa-microphone"></i></button>
+          
+          <div class="button-menu">
+              <a href="" class="v1"><img src="v1.png" width="35" height="35">
+              <div class="v1-cont">
+               <button id="button">Create</button>   
+              </div>
+              </a>
+              <a href-"" class="v2"><img src="v2.png" width="30" height="30">
+              <div class="v2-cont">
+                  <button id="button">YouTube Apps </button>
+              </div>
+              </a>
+              <a href="" class="v3"><img src="notif.svg" width="25" height="25">
+               <div class="v3-cont">
+                   <button id="button">Notification</button>
+               </div>
+               </a>
+                <a href="" class="v4"><img src="user.svg" width="25" height="25"></a>
+    </div>
   </div>
-  
+</div>
+  <div class="block-menu">
    <nav>
-<ul>
-    <li class="home"><a href="">Home<img class="home" src="home.svg" width="20" height="20"></a></li>
-    <li><a class="a-nav" href="">Explore</a></li>
-    <li><a class="a-nav" href="">Subscriptions</a>
-    <li><a class="a-nav" href=" ">Library</a></li>
-    <li><a class="a-nav" href="">History</a></li>
-    <li><a class="a-nav" href="">Your videos</a></li>
-    <li><a class="a-nav" href="">Watch later</a></li>
-    <li><a class="a-nav" href="">Liked videos</a></li>
-</ul>      
-<ul>
+        <ul>
+    <li class=" a-nav home"><a href=""><img class="img-space" src="Images/home%20icon.png" width="14" height="14">Home</a></li>
+    <li><a class="a-nav" href=""><i class="far fa-compass img-space"></i>Explore</a></li>
+    <li><a class="a-nav" href=""><img class="img-space" src="Images/subs.svg" width="20" height="10">Subscriptions</a>
+    <li><a class="a-nav" href=" "><img class="img-space" src="Images/library%20icon.png" width="20" height="10">Library</a></li>
+    <li><a class="a-nav" href=""><i class="fas fa-history img-space"></i>History</a></li>
+    <li><a class="a-nav" href=""><img class="img-space" src="Images/ur%20videos.jpg" width="20" height="10">Your videos</a></li>
+    <li><a class="a-nav" href=""><i class="far fa-clock img-space"></i>Watch later</a></li>
+    <li><a class="a-nav" href=""><img class="img-space" src="Images/liked%20videos.png" width="20" height="10">Liked videos</a></li>
+    </ul>      
+    <ul>
    <p>SUBSCRIPTIONS</p>
     <li><a class="a-nav" href="">Aditya Music</a></li>
     <li><a class="a-nav" href="">India Today</a></li>
     <li><a class="a-nav" href="">5-minutes craft</a></li>
     <li><a class="a-nav" href="">NTV telugu</a></li>
     
-</ul>
-</nav>
-
+    </ul>
+    </nav>
+</div>
 <div class="main">
+<hr>
  <button>All</button>
  <button>Comedies</button>
  <button>Clothing</button>
@@ -132,6 +227,9 @@
  <button>Tourism</button>
  <button>NTV telugu</button>
  <button>Samantha</button> 
+ <button>Sid sri ram</button> 
+ <button>Telugu songs</button> 
+ <button>Music</button>
 </div> 
 <div class="maincontent">
     
